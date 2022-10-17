@@ -1,0 +1,15 @@
+
+:root{
+    --primary-color: #FFCD07;
+    --secondary-color: #0B7CC1;
+    --primary-font: 'Montserrat', sans-serif;
+}
+.tab-active{
+    background-color: var(--primary-color);
+
+    
+}
+
+.d-none{
+    display: none;
+}

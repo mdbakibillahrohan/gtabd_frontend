@@ -1,0 +1,151 @@
+/* import section  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('utilities.css');
+/* import section  */
+
+
+/* here started the variable section */
+:root{
+    --primary-color: #FFCD07;
+    --secondary-color: #0B7CC1;
+    --primary-font: 'Montserrat', sans-serif;
+}
+
+
+/* here ended the variable section */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+/* bootstrap overridden code started here */
+
+
+/* bootstrap overridden code ended here */
+
+
+/* utilities classes  */
+/* .tab-active{
+    background-color: var(--primary-color);
+} */
+/* utilities classes  */
+
+/*-------------------------|Code Started|-------------------------------*/
+
+/* here started the navbar section / */
+nav .user-btn{
+    width: 10%;
+}
+
+nav .user-btn i{
+    font-size: 30px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+nav .navbar-brand{
+    width: 10%;
+}
+
+nav .navbar-brand img{
+    width: 100%;
+}
+
+.nav-item{
+    margin: 0px 10px;
+}
+
+.nav-item a{
+    color: #000;
+}
+
+.nav-item a:hover{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+/* here ended the navbar section  */
+
+
+
+/* here started the hero section  */
+.hero{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hero .bg-img img{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.hero .content{
+    position: absolute;
+    width: 100%;
+}
+.hero .content .tabs{
+    position: absolute;
+    width: 80%;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero .content .tabs .title{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero .content .tabs .tab-window{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+
+.hero .content .tabs .tab-window .tab-buttons{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(179, 162, 162);
+}
+.hero .content .tabs .tab-window .tab-buttons .tab-btn{
+    width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hero .content .tabs .tab-window .tab-buttons .tab-btn i{
+    margin-right: 15px;
+    color: #636e72;
+}
+
+.hero .content .tabs .tab-window .tab-content{
+    padding: 40px;
+    width: 100%;
+}
+.hero .content .tabs .tab-window .tab-content .tab-hotel{
+    width: 100%;
+}
+
+.hero .content .tabs .tab-window .tab-content .tab-content-title{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero .content .tabs .tab-window .tab-content .tab-content-text{
+    text-align: justify;
+}
+
+/* here ended the hero section  */
+/*-------------------------|Code Ended|-------------------------------*/
