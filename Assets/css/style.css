@@ -1,5 +1,6 @@
 /* import section  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('utilities.css');
 /* import section  */
 
@@ -8,7 +9,12 @@
 :root{
     --primary-color: #FFCD07;
     --secondary-color: #0B7CC1;
-    --primary-font: 'Montserrat', sans-serif;
+    --grey-color: #F7F7F7;
+    /* --primary-font: 'Montserrat', sans-serif; */
+    --primary-font: 'Roboto', sans-serif;
+    
+
+
 }
 
 
@@ -21,7 +27,9 @@
     font-family: var(--primary-font);
 }
 /* bootstrap overridden code started here */
-
+.row{
+    width: 100%;
+}
 
 /* bootstrap overridden code ended here */
 
@@ -58,11 +66,11 @@ nav .navbar-brand img{
 }
 
 .nav-item a{
-    color: #000;
+    color: #636e72;
 }
 
 .nav-item a:hover{
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
 }
 /* here ended the navbar section  */
@@ -75,6 +83,8 @@ nav .navbar-brand img{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
+    background-color: var(--grey-color);
+    height: 90vh;
 }
 .hero .bg-img img{
     width: 100%;
@@ -85,13 +95,14 @@ nav .navbar-brand img{
 .hero .content{
     position: absolute;
     width: 100%;
+    height: 100%;
 }
 .hero .content .tabs{
     position: absolute;
     width: 80%;
-    top: 140px;
+    top: 60%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate( -50%, -50%);
 }
 .hero .content .tabs .title{
     color: #fff;
@@ -103,6 +114,7 @@ nav .navbar-brand img{
     width: 100%;
     background-color: #fff;
     border-radius: 20px;
+    height: 50vh;
     box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
@@ -124,6 +136,7 @@ nav .navbar-brand img{
     align-items: center;
     cursor: pointer;
     font-weight: bold;
+    transition: 0.4s;
 }
 .hero .content .tabs .tab-window .tab-buttons .tab-btn i{
     margin-right: 15px;
@@ -148,4 +161,62 @@ nav .navbar-brand img{
 }
 
 /* here ended the hero section  */
+
+
+
+/* here started the features section  */
+.features .row .feature-item{
+    text-align: center;
+}
+.features .row .feature-item i{
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.features .row .feature-item .content .title{
+    font-weight: bold;
+    margin: 15px 0px;
+}
+/* here ended the features section  */
+
+
+
+/* here started the lightening section  */
+.lightening-deals .lightening-carousel{
+    position: relative;
+}
+.lightening-deals .lightening-title{
+    margin-bottom: 20px;
+}
+.lightening-deals .lightening-carousel .owl-nav{
+    position: absolute;
+    top: -12%;
+    right: 0;
+    font-size: 20px;
+}
+.lightening-deals .lightening-carousel .owl-nav .owl-prev{
+    margin-right: 20px;
+}
+.lightening-deals .lightening-carousel .owl-nav .owl-prev:hover{
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+.lightening-deals .lightening-carousel .owl-nav .owl-next:hover{
+    background-color: #fff;
+    color: var(--secondary-color);
+}
+.lightening-deals .lightening-deals-item .img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.lightening-deals .lightening-deals-item .img img{
+    height: 300px;
+    transition: 1s;
+    width: 100%;
+}
+
+.lightening-deals .lightening-deals-item .img img:hover{
+    transform: scale(1.1);
+}
+/* here ended the lightening section  */
 /*-------------------------|Code Ended|-------------------------------*/

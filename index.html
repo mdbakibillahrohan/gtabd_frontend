@@ -17,12 +17,14 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="Assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="Assets/css/owl.theme.default.css" />
     <link rel="stylesheet" href="Assets/css/style.css" />
   </head>
   <body>
     <div class="root">
       <!-- nav section started here  -->
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="Assets/img/gta-logo.png" alt="" />
@@ -116,26 +118,26 @@
         </div>
         <div class="content">
           <div class="tabs">
-            <h2 class="title text-center">
+            <h2 id="tabs-title" class="title text-center">
               Find Best Rated Deals on ShareTrip Hotels
             </h2>
             <div class="tab-window">
               <div class="tab-buttons">
-                <div class="tab-btn tab-active">
+                <div for="flight" class="tab-btn tab-active">
                   <i class="fa-solid fa-plane"></i>
                   Flight
                 </div>
-                <div class="tab-btn">
+                <div for="visa" class="tab-btn">
                   <i class="fa-solid fa-globe"></i>
                   Visa
                 </div>
-                <div class="tab-btn">
+                <div for="hotel" class="tab-btn">
                   <i class="fa-solid fa-hotel"></i>
                   Hotels
                 </div>
               </div>
               <div class="tab-content">
-                <div id="tab_flight" class="">
+                <div id="tab_flight" class="single-tab">
                   <h4 class="text-center tab-content-title">
                     We are offering you the best Flight
                   </h4>
@@ -162,7 +164,7 @@
                     praesentium odit commodi, deleniti nam? Alias, accusantium.
                   </p>
                 </div>
-                <div id="tab_visa" class="d-none">
+                <div id="tab_visa" class="d-none single-tab">
                   <h4 class="text-center tab-content-title">
                     We are offering you the best Visa Package
                   </h4>
@@ -176,7 +178,7 @@
                     deleniti nam? Alias, accusantium.
                   </p>
                 </div>
-                <div id="tab_hotel" class="d-none">
+                <div id="tab_hotel" class="d-none single-tab">
                   <h4 class="text-center tab-content-title">
                     We are offering you the best hotel
                   </h4>
@@ -196,12 +198,184 @@
         </div>
       </div>
       <!-- hero section ended here  -->
+
+      <!-- here started the features section  -->
+      <div class="features def-m-p">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 feature-item">
+              <i class="fa-solid fa-phone"></i>
+              <div class="content">
+                <h4 class="title">24/7 Support</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi, voluptate.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 feature-item">
+              <i class="fa-solid fa-phone"></i>
+              <div class="content">
+                <h4 class="title">24/7 Support</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi, voluptate.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 feature-item">
+              <i class="fa-solid fa-phone"></i>
+              <div class="content">
+                <h4 class="title">24/7 Support</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi, voluptate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- here started the features section  -->
+
+      <!-- here started the lightening deals section  -->
+      <div class="lightening-deals def-m-p">
+        <div class="container">
+          <h2 class="lightening-title">Lightening Deals</h2>
+          <div class="lightening-carousel owl-carousel owl-theme">
+            <div class="lightening-deals-item">
+              <div class="img">
+                <img src="Assets/img/lightening-deal1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h5 class="title my-3">
+                  Breathtaking Kayaking in Reju Khal...
+                </h5>
+                <div class="tour-details mb-1 d-flex">
+                  <div class="day me-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kathmundu, Dhaka</span>
+                  </div>
+                </div>
+                <div class="financial-details">
+                  <span> <b>BDT 11000/</b> Person</span>
+                </div>
+              </div>
+            </div>
+            <div class="lightening-deals-item">
+              <div class="img">
+                <img src="Assets/img/lightening-deal1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h5 class="title my-3">
+                  Breathtaking Kayaking in Reju Khal...
+                </h5>
+                <div class="tour-details mb-1 d-flex">
+                  <div class="day me-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kathmundu, Dhaka</span>
+                  </div>
+                </div>
+                <div class="financial-details">
+                  <span> <b>BDT 11000/</b> Person</span>
+                </div>
+              </div>
+            </div>
+            <div class="lightening-deals-item">
+              <div class="img">
+                <img src="Assets/img/lightening-deal1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h5 class="title my-3">
+                  Breathtaking Kayaking in Reju Khal...
+                </h5>
+                <div class="tour-details mb-1 d-flex">
+                  <div class="day me-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kathmundu, Dhaka</span>
+                  </div>
+                </div>
+                <div class="financial-details">
+                  <span> <b>BDT 11000/</b> Person</span>
+                </div>
+              </div>
+            </div>
+            <div class="lightening-deals-item">
+              <div class="img">
+                <img src="Assets/img/lightening-deal1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h5 class="title my-3">
+                  Breathtaking Kayaking in Reju Khal...
+                </h5>
+                <div class="tour-details mb-1 d-flex">
+                  <div class="day me-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kathmundu, Dhaka</span>
+                  </div>
+                </div>
+                <div class="financial-details">
+                  <span> <b>BDT 11000/</b> Person</span>
+                </div>
+              </div>
+            </div>
+            <div class="lightening-deals-item">
+              <div class="img">
+                <img src="Assets/img/lightening-deal1.jpg" alt="" />
+              </div>
+              <div class="content">
+                <h5 class="title my-3">
+                  Breathtaking Kayaking in Reju Khal...
+                </h5>
+                <div class="tour-details mb-1 d-flex">
+                  <div class="day me-2">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span>3 Days</span>
+                  </div>
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Kathmundu, Dhaka</span>
+                  </div>
+                </div>
+                <div class="financial-details">
+                  <span> <b>BDT 11000/</b> Person</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- here ended the lightening deals section  -->
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="Assets/js/owl.carousel.min.js"></script>
+    <script src="Assets/js/caurosel.js"></script>
     <script src="Assets/js/script.js"></script>
   </body>
 </html>
