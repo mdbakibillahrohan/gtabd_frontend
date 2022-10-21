@@ -51,10 +51,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         })
     }
-
-
-    // changing owl carousel previous and next icon 
-    let owl_prev = document.getElementsByClassName("owl-prev");
-    let owl_next = document.getElementsByClassName("owl-next");
 });
 

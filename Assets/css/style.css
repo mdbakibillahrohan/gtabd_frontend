@@ -31,6 +31,8 @@
     width: 100%;
 }
 
+
+
 /* bootstrap overridden code ended here */
 
 
@@ -185,12 +187,10 @@ nav .navbar-brand img{
 .lightening-deals .lightening-carousel{
     position: relative;
 }
-.lightening-deals .lightening-title{
-    margin-bottom: 20px;
-}
+
 .lightening-deals .lightening-carousel .owl-nav{
     position: absolute;
-    top: -12%;
+    top: -13%;
     right: 0;
     font-size: 20px;
 }
@@ -219,4 +219,69 @@ nav .navbar-brand img{
     transform: scale(1.1);
 }
 /* here ended the lightening section  */
+
+
+
+/* here started the popular package  */
+.popular-package .highlighted-package{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.popular-package .highlighted-package::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 1;
+    opacity: 0.4;
+}
+.popular-package .highlighted-package .highlighted-package-image{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    transition: 1s;
+    z-index: -1;
+}
+.popular-package .highlighted-package:hover .highlighted-package-image{
+    transform: scale(1.03);
+}
+
+.popular-package .highlighted-package .package-details{
+    position: absolute;
+    color: #fff;
+    bottom: 35px;
+    left: 35px;
+    z-index: 2;
+}
+.popular-package .highlighted-package .package-details .quantity{
+    color: #fff;
+}
+.popular-package .highlighted-package .package-details .quantity .package{
+    margin-left: 5px;
+}
+.popular-package .highlighted-package .package-details .name{
+    font-weight: 700;
+    margin: 8px 0px;
+}
+
+.popular-package .single-package-item{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.popular-package .single-package-item:hover .single-package-image{
+    transform: scale(1.03);
+}
+
+.popular-package .single-package-item .single-package-image{
+    height: 300px;
+    transition: 1s;
+}
+/* here ended the popular package  */
 /*-------------------------|Code Ended|-------------------------------*/

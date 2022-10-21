@@ -16,13 +16,19 @@ $(document).ready(function(){
      responsive:{
       0:{
           items:1,
-          nav:true
+          nav:true,
+          center: true,
       },
       600:{
-          items:3,
-          nav:false
+          items:2,
+          nav:true
       },
       1000:{
+          items:3,
+          nav:true,
+          loop:false
+      },
+      1250:{
           items:4,
           nav:true,
           loop:false
