@@ -27,24 +27,29 @@
     font-family: var(--primary-font);
 }
 /* bootstrap overridden code started here */
-.row{
-    width: 100%;
-}
+
 
 
 
 /* bootstrap overridden code ended here */
 
 
-/* utilities classes  */
-/* .tab-active{
-    background-color: var(--primary-color);
-} */
-/* utilities classes  */
+/* reset code  */
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+/* reset code  */
 
 /*-------------------------|Code Started|-------------------------------*/
 
 /* here started the navbar section / */
+
+nav{
+    box-shadow: 0px 7px 9px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 7px 9px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 7px 9px 1px rgba(0,0,0,0.5);
+}
 nav .user-btn{
     width: 10%;
 }
@@ -149,9 +154,7 @@ nav .navbar-brand img{
     padding: 40px;
     width: 100%;
 }
-.hero .content .tabs .tab-window .tab-content .tab-hotel{
-    width: 100%;
-}
+
 
 .hero .content .tabs .tab-window .tab-content .tab-content-title{
     font-weight: bold;
@@ -161,6 +164,34 @@ nav .navbar-brand img{
 .hero .content .tabs .tab-window .tab-content .tab-content-text{
     text-align: justify;
 }
+
+/* hotel tab section css started */
+.hero .content .tabs .tab-window .tab-content .single-tab{
+    position: relative;
+    width: 100%;
+}
+.hero .content .tabs .tab-window .tab-content .single-tab .header-tabs{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    width: 30%;
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+}
+
+.hero .content .tabs .tab-window .tab-content .single-tab .header-tabs .flight-header-single-tab{
+    cursor: pointer;
+    padding: 0px 10px;
+}
+.hero .content .tabs .tab-window .tab-content .single-tab .header-tabs .active{
+    background-color: var(--secondary-color);
+}
+/* hotel tab section css ended */
+
 
 /* here ended the hero section  */
 
@@ -313,4 +344,25 @@ nav .navbar-brand img{
     font-size: 16px;
 }
 /* here ended the cheapest flight section  */
+
+
+/* here started the footer section  */
+footer{
+    background-color: var(--grey-color);
+    padding: 50px 0px;
+}
+footer .links .footer-link{
+    color: grey;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+}
+footer .links .footer-link:hover{
+    margin-left: 5px;
+}
+
+footer .footer-block{
+    margin-bottom: 20px;
+}
+/* here ended the footer section  */
 /*-------------------------|Code Ended|-------------------------------*/

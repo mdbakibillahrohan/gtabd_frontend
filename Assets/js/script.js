@@ -37,16 +37,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     for (let n = 0; n < tab_buttons.length; n++) {
         tab_buttons[n].addEventListener("click", () => {
             if (tab_buttons[n].getAttribute('for') == "visa") {
-                changeTab("visa", `Best Visa Processing Agency in Bangladesh
-            `);
+                changeTab("visa", `Best Visa Processing Agency in Bangladesh`);
                 changeTabBtn(tab_buttons[n]);
             } if (tab_buttons[n].getAttribute("for") == "flight") {
-                changeTab("flight", `Welcome to GTA! Find Flights, Hotels & Tour Packages
-            `);
+                changeTab("flight", `Welcome to GTA! Find Flights, Hotels & Tour Packages`);
                 changeTabBtn(tab_buttons[n]);
             } if (tab_buttons[n].getAttribute("for") == "hotel") {
-                changeTab("hotel", `Find Best Rated Deals on GTA Hotels
-            `);
+                changeTab("hotel", `Find Best Rated Deals on GTA Hotels`);
                 changeTabBtn(tab_buttons[n]);
             }
         })
