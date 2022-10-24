@@ -1,52 +1,47 @@
-
-// here are all the function 
-
-
-function changeTab(tabName, title = "Welcome to our Website") {
-
-    // This block of code hide all the div with name of single tab 
-    let content = document.getElementsByClassName("single-tab");
-    for (let a = 0; a < content.length; a++) {
-        content[a].classList.add("d-none")
-    }
-
-    // This block of code show the particular view 
-    let tabId = "tab_" + tabName;
-    let tab = document.getElementById(tabId);
-    tab.classList.remove("d-none");
-
-
-    // change the title
-    let htmlTitle = document.getElementById("tabs-title");
-    htmlTitle.innerText = title;
-
-}
-
-function changeTabBtn(btn) {
-    let tab_buttons = document.getElementsByClassName('tab-btn');
-    for (let n = 0; n < tab_buttons.length; n++) {
-        tab_buttons[n].style.backgroundColor = "#fff";
-    }
-    btn.style.backgroundColor = "#FFCD07";
-}
-
+import {changeTab, changeTabBtn, textLimit} from '/Assets/js/function.js';
 
 // here started the code
 document.addEventListener("DOMContentLoaded", function (event) {
+    console.log(event)
     let tab_buttons = document.getElementsByClassName('tab-btn');
     for (let n = 0; n < tab_buttons.length; n++) {
         tab_buttons[n].addEventListener("click", () => {
             if (tab_buttons[n].getAttribute('for') == "visa") {
-                changeTab("visa", `Best Visa Processing Agency in Bangladesh`);
-                changeTabBtn(tab_buttons[n]);
+                changeTab("visa", "single-tab", true, "tabs-title", `Best Visa Processing Agency in Bangladesh`);
+                changeTabBtn(tab_buttons[n], "tab-btn", 'tab-active');
             } if (tab_buttons[n].getAttribute("for") == "flight") {
-                changeTab("flight", `Welcome to GTA! Find Flights, Hotels & Tour Packages`);
-                changeTabBtn(tab_buttons[n]);
+                changeTab("flight", "single-tab", true, "tabs-title", `Welcome to GTA! Find Flights, Hotels & Tour Packages`);
+                changeTabBtn(tab_buttons[n], "tab-btn", 'tab-active');
             } if (tab_buttons[n].getAttribute("for") == "hotel") {
-                changeTab("hotel", `Find Best Rated Deals on GTA Hotels`);
-                changeTabBtn(tab_buttons[n]);
+                changeTab("hotel", "single-tab", true, "tabs-title", `Find Best Rated Deals on GTA Hotels`);
+                changeTabBtn(tab_buttons[n], "tab-btn", 'tab-active');
             }
         })
     }
+
+
+    let flight_tab_buttons = document.getElementsByClassName("flight-header-single-tab");
+    
+    for(let e = 0; e<flight_tab_buttons.length; e++){
+        flight_tab_buttons[e].addEventListener("click", ()=>{
+            if(flight_tab_buttons[e].getAttribute('for')=="one way"){
+                changeTabBtn(flight_tab_buttons[e], "flight-header-single-tab","active")
+                changeTab("one_way", "flight-single-tab");
+            }
+            if(flight_tab_buttons[e].getAttribute('for')=="round trip"){
+                changeTabBtn(flight_tab_buttons[e], "flight-header-single-tab","active")
+                changeTab("round_trip", "flight-single-tab");
+            }
+            if(flight_tab_buttons[e].getAttribute('for')=="multi city"){
+                changeTabBtn(flight_tab_buttons[e], "flight-header-single-tab", "active")
+                changeTab("multi_city", "flight-single-tab");
+            }
+            
+        })
+    }
+
+    textLimit("search-limit-details", 25);
+    
+    
 });
 

@@ -17,6 +17,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="Assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="Assets/css/owl.theme.default.css" />
     <link rel="stylesheet" href="Assets/css/style.css" />
@@ -138,21 +139,91 @@
               </div>
               <div class="tab-content">
                 <div id="tab_flight" class="single-tab">
-<<<<<<< HEAD
-=======
-                  <div class="header-tabs d-flex justify-content-between">
-                    <div class="flight-header-single-tab active">
+                  <div class="header-tabs d-flex justify-content-around align-items-center">
+                    <div for="one way" class="flight-header-single-tab active">
                       <h6 class="fligt-header-single-tab-name text-center">One Way</h6>
                     </div>
-                    <div class="flight-header-single-tab">
-                      <h6 class="fligt-header-single-tab-name text-center">One Way</h6>
+                    <div for="round trip" class="flight-header-single-tab">
+                      <h6 class="fligt-header-single-tab-name text-center">Round Trip</h6>
                     </div>
-                    <div class="flight-header-single-tab">
-                      <h6 class="fligt-header-single-tab-name text-center">One Way</h6>
+                    <div for="multi city" class="flight-header-single-tab">
+                      <h6 class="fligt-header-single-tab-name text-center">Multi City</h6>
                     </div>
                   </div>
 
->>>>>>> fd73031 (footer section completed)
+                  <!-- here started the flight tab contents  -->
+                  <div class="flight-tab-contents">
+                    <div id="tab_one_way" class="flight-single-tab">
+
+
+                      <div class="wrap row">
+
+
+                        <div class="locations border rounded-start col-md-3 ">
+                          <div class="text-field">
+                            <span class="label">Flying from</span>  
+                              
+                              <input value="Dhaka" class="search-text" placeholder="Airport" type="text">
+                              <div class="details">
+                                <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="locations border rounded-end col-md-3 ">
+                          <div class="text-field">
+                            <span class="label">Flying to</span>  
+                              
+                              <input value="Dhaka" class="search-text" placeholder="Airport" type="text">
+                              <div class="details">
+                                <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="locations col-md-3 ">
+                          <div class="text-field border rounded">
+                            <span class="label">Select Date</span>  
+                              
+                              <input value="Dhaka" class="search-text"  type="date">
+                              <div class="details">
+                                <span class="fw-600 search-limit-details"><b>2022,</b> October</span>
+                              </div>
+                          </div>
+                          
+                        </div>
+                        <div class="locations col-md-3 ">
+                          <div class="text-field border rounded">
+                            <span class="label">Passengers and Cabin Class</span>  
+                              
+                              <input value="1 Person" class="search-text" placeholder="Airport" type="text">
+                              <div class="details">
+                                <span class="fw-bold search-limit-details ">Economy Class</span>
+                              </div>
+                          </div>
+                          
+                        </div>
+
+
+
+                      </div>
+
+
+                      <a class="btn fw-bold text-light mt-3 search-flight-btn" href="#">Search Flight</a>
+
+
+                    </div>
+
+
+                    <div id="tab_round_trip" class="d-none flight-single-tab container">
+                      <h2>Round Trip</h2>
+                    </div>
+                    <div id="tab_multi_city" class="d-none flight-single-tab container">
+                      <h1>Multi City</h1>
+                    </div>
+                  </div>
+
+                  <!-- here ended flight tab content  -->
+
                 </div>
                 <div id="tab_visa" class="d-none single-tab">
                   <h4 class="text-center tab-content-title">
@@ -737,6 +808,8 @@
     ></script>
     <script src="Assets/js/owl.carousel.min.js"></script>
     <script src="Assets/js/caurosel.js"></script>
-    <script src="Assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="Assets/js/select2_usage.js"></script>
+    <script type="module" src="Assets/js/script.js"></script>
   </body>
 </html>
