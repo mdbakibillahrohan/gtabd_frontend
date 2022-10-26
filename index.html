@@ -24,6 +24,88 @@
   </head>
   <body>
     <div class="root">
+
+
+
+            <!-- modal section started here  -->
+            <!-- Button trigger modal -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Passengers and Cabin Class</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="passengers">
+                <h5 class="mb-3">Passengers</h5>
+
+                <div class="row mb-3">
+                  <div class="col-2 d-flex align-items-center">
+                    <span id="adult_person" class="fw-bold text-center">1</span>
+                  </div>
+                  <div class="col-7">
+                    <h6>Adults</h6>
+                    <span>12 Years and above</span>
+                  </div>
+                  <div class="col-3">
+                    <button for="adult" class="btn border-dark person-subtract"><i class="fa-solid fa-minus"></i></button>
+                    <button for="adult" class="btn border-primary text-primary person-add"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+
+
+                <div class="row mb-3">
+                  <div class="col-2 d-flex align-items-center">
+                    <span id="child_person" class="fw-bold text-center">0</span>
+                  </div>
+                  <div class="col-7">
+                    <h6>Child</h6>
+                    <span>2-11 Years at the time of travel</span>
+                  </div>
+                  <div class="col-3">
+                    <button for="child" class="btn border-dark person-subtract"><i class="fa-solid fa-minus"></i></button>
+                    <button for="child" class="btn border-primary text-primary person-add"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+
+
+                <div class="row mb-3">
+                  <div class="col-2 d-flex align-items-center">
+                    <span id="infant_person" class="fw-bold text-center">0</span>
+                  </div>
+                  <div class="col-7">
+                    <h6>Infants</h6>
+                    <span>0-23 Months at the time of travels</span>
+                  </div>
+                  <div class="col-3">
+                    <button for="infant" class="btn border-dark person-subtract"><i class="fa-solid fa-minus"></i></button>
+                    <button for="infant" class="btn border-primary text-primary person-add"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+              <div class="cabin-class">
+                <h5 class="mb-3">Cabin Class</h5>
+                <select id="class_selection" class="form-select" size="3" aria-label="size 3 select example">
+                  <option value="Economy">Economy</option>
+                  <option value="Business">Business</option>
+                  <option value="First">First Class</option>
+                </select>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal ended started here  -->
       <!-- nav section started here  -->
       <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container">
@@ -159,48 +241,72 @@
                       <div class="wrap row">
 
 
-                        <div class="locations border rounded-start col-md-3 ">
-                          <div class="text-field">
-                            <span class="label">Flying from</span>  
-                              
-                              <input value="Dhaka" class="search-text" placeholder="Airport" type="text">
-                              <div class="details">
-                                <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
-                              </div>
+                        <div class="col-md-3 single-search-component">
+                          <div class="search-box ">
+                            <div class="text-field">
+                              <span class="label">Flying from</span>  
+                                
+                                <!-- <input value="Dhaka" class="search-text" placeholder="Airport" type="text"> -->
+                                <select class="search-text select2-search-element " name="flight_from" id="">
+                                  <option value="1">DAC, Dhaka International Airport</option>
+                                </select>
+                                <div class="details">
+                                  <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="col-md-3 single-search-component">
+                          <div class="search-box">
+                            <div class="text-field">
+                              <span class="label">Flying to</span>  
+                                
+                                <!-- <input value="Dhaka" class="search-text" placeholder="Airport" type="text"> -->
+                                <select class="search-text select2-search-element " name="flight_from" id="">
+                                  <option value="1">DAC, Dhaka International Airport</option>
+                                </select>
+                                <div class="details">
+                                  <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                                </div>
+                            </div>
+
+                            
+                          </div>
+                          
+                        </div>
+
+
+                        <div class="col-md-3 single-search-component">
+                          <div class="search-box">
+                            <div class="text-field ">
+                              <span class="label">Select Date</span>  
+                                
+                                <input value="Dhaka" class="search-text"  type="date">
+                                <div class="details">
+                                  <span class="fw-600 search-limit-details"><b>2022,</b> October</span>
+                                </div>
+                            </div>
+                            
                           </div>
                         </div>
 
-                        <div class="locations border rounded-end col-md-3 ">
-                          <div class="text-field">
-                            <span class="label">Flying to</span>  
-                              
-                              <input value="Dhaka" class="search-text" placeholder="Airport" type="text">
-                              <div class="details">
-                                <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
-                              </div>
+
+                        <div class="col-md-3 single-search-component">
+                          <div class="search-box " data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <div class="text-field">
+                              <span class="label">Passengers and Cabin Class</span>  
+                                
+                                <!-- <input value="1 Person" class="search-text" placeholder="Airport" type="text"> -->
+                                <button type="button" class="btn fw-bold p-0 d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <span class="ticket-total-person">1</span> Person
+                                </button>
+                                <div class="details">
+                                  <span class="fw-bold search-limit-details class-details">Economy</span> Class
+                                </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="locations col-md-3 ">
-                          <div class="text-field border rounded">
-                            <span class="label">Select Date</span>  
-                              
-                              <input value="Dhaka" class="search-text"  type="date">
-                              <div class="details">
-                                <span class="fw-600 search-limit-details"><b>2022,</b> October</span>
-                              </div>
-                          </div>
-                          
-                        </div>
-                        <div class="locations col-md-3 ">
-                          <div class="text-field border rounded">
-                            <span class="label">Passengers and Cabin Class</span>  
-                              
-                              <input value="1 Person" class="search-text" placeholder="Airport" type="text">
-                              <div class="details">
-                                <span class="fw-bold search-limit-details ">Economy Class</span>
-                              </div>
-                          </div>
-                          
                         </div>
 
 
@@ -810,6 +916,8 @@
     <script src="Assets/js/caurosel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="Assets/js/select2_usage.js"></script>
+    <script src="Assets/js/function.js"></script>
+    <script src="Assets/js/flight_book.js"></script>
     <script type="module" src="Assets/js/script.js"></script>
   </body>
 </html>

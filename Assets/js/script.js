@@ -1,4 +1,4 @@
-import {changeTab, changeTabBtn, textLimit} from '/Assets/js/function.js';
+
 
 // here started the code
 document.addEventListener("DOMContentLoaded", function (event) {

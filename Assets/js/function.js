@@ -47,4 +47,3 @@ function textLimit(className, limit){
 }
 
 
-export {changeTab, changeTabBtn, textLimit};
