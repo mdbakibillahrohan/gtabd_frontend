@@ -3,4 +3,9 @@ $(document).ready(function() {
         width: 'resolve',
         placeholder: 'Airport'
     });
+
+    $('.visa_country_select').select2({
+        width: "150",
+        placeholder: "Select Country"
+    })
 });

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa Details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="Assets/css/owl.theme.default.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- nav section started here  -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="Assets/img/gta-logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Holiday</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Visa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">News and Media</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Promotions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+          </ul>
+          <hr />
+          <div
+            class="ms-auto user-btn d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="d-none login-btn ms-2">
+            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav section ended here  -->
+
+    <div class="visa-feature-image">
+        <img src="https://www.planetware.com/wpimages/2020/03/singapore-in-pictures-beautiful-places-to-photograph-marina-bay-sands.jpg" class="visa-image" alt="">
+
+        <h1 class="title logo-yellow-color">Singapore</h1>
+    </div>
+    <!-- here started the visa details section  -->
+    <div class="visa-details container">
+
+
+        
+      <!-- the search options  -->
+      <div class="my-5">
+        <form class="d-flex flex-column align-items-center">
+          <h3 class="fw-bold logo-blue-color text-capitalize mb-2">
+            Search about your visa
+          </h3>
+          <div class="type d-flex mb-2">
+            <span class="fw-bold">Visa Type: </span>
+            <div class="mx-2">
+              <input disabled type="radio" name="visa_type" id="" />
+              <span>Sticker</span>
+            </div>
+            <div class="mx-2">
+              <input disabled type="radio" name="visa_type" id="" />
+              <span>Visa</span>
+            </div>
+            <div class="mx-2">
+              <input selected type="radio" name="visa_type" id="" />
+              <span>All</span>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <span class="fw-bold">Select Country</span>
+            <select name="country" class="visa_country_select">
+              <option value="bangladesh">Bangladesh</option>
+              <option value="bangladesh">India</option>
+              <option value="bangladesh">Pakistan</option>
+              <option value="bangladesh">UK</option>
+              <option value="bangladesh">USA</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-warning">Search Details</button>
+        </form>
+      </div>
+      <!-- the search options  -->
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="visa-text border rounded mb-5 p-5">
+            <div class="title logo-blue-color text-center my-3">
+              <h1>Singapore Visa Service From Bangladesh</h1>
+            </div>
+            <div class="box">
+              <h3 class="mb-2 logo-yellow-color">
+                Documents Required for Singapore Tourist Visa
+              </h3>
+              <p style="margin-left: 15px">
+                &#10003; Original Passport (Validity should be at least 06
+                Months from the date of departure) <br />
+                &#10003; Recent Passport size photo with white background (Mat
+                Paper) 2 Copy
+                <br />
+                &#10003; Visiting Card & National ID Card
+                <br />
+                &#10003; N.O.C / G.O / Trade License Notarized Copy with
+                Translate in English & Letterhead Pad
+                <br />
+                &#10003; Original Bank statement for last six months . Minimum
+                Balance Taka 60,000/
+                <br />
+
+                &#9733; Bank Solvency Certificate<br />
+                &#9733; Student ID Card for Student (if child travel with parent
+                )
+                <br />
+                &#9733; Birth Certificate for Infant (if child travel with
+                parent )
+                <br />
+                &#9733; Marriage Certificate (only for newly married couple )
+                <br />
+                &#9733; Letter of Introduction (L.O.I.) / invitation with
+                Tourist voucher and Hotel Booking
+                <br />
+              </p>
+              <h3 class="mb-2 logo-yellow-color">
+                Per Person Price (Non Refundable)
+              </h3>
+              <p style="margin-left: 15px">
+                <h5 class="logo-blue-color my-3">Tourist Visa</h5>
+                &circledcirc; Visa fee & Processing fee with LOI, Tourist voucher and Hotel Booking Tk. 5000/- <br>
+                &circledcirc; Visa fee & Processing fee without LOI, Tourist voucher and Hotel Booking Tk. 3500/-
+                <br>
+                <h5 class="logo-blue-color my-3">Medical Visa</h5>
+                &circledcirc; Visa fee & Processing fee with LOI, Tourist voucher and Hotel Booking Tk. 5000/- <br>
+                &circledcirc; Visa fee & Processing fee without LOI, Tourist voucher and Hotel Booking Tk. 3500/-
+                <br>
+                <h5 class="logo-blue-color my-3">Student Visa</h5>
+                &circledcirc; Visa fee & Processing fee with LOI, Tourist voucher and Hotel Booking Tk. 5000/- <br>
+                &circledcirc; Visa fee & Processing fee without LOI, Tourist voucher and Hotel Booking Tk. 3500/-
+                <br>
+                
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="contact-section text-center">
+            <h3>Need Assistance?</h3>
+            <h5>Please Contact</h5>
+            <div class="border rounded">
+              <p>Whatsapp/Viber/Imo</p>
+              <div>+88 01912-819770</div>
+              <div>+88 01912-819770</div>
+              <div>+88 01912-819770</div>
+              <div>+88 01912-819770</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here ended the visa details section  -->
+
+    <!-- here started the footer section  -->
+    <footer>
+      <div class="container">
+        <div class="row top">
+          <div class="col-md-3 col-6 footer-block">
+            <h5 class="heading">Company</h5>
+            <div class="links mt-3">
+              <a class="footer-link mb-2" href="#">About Us</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 footer-block">
+            <h5 class="heading">Explore</h5>
+            <div class="links mt-3">
+              <a class="footer-link mb-2" href="#">Spin to Win</a>
+              <a class="footer-link mb-2" href="#">Leader Board</a>
+              <a class="footer-link mb-2" href="#">Hotel Sitemap</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 footer-block">
+            <h5 class="heading">Help</h5>
+            <div class="links mt-3">
+              <a class="footer-link mb-2" href="#">FAQ</a>
+              <a class="footer-link mb-2" href="#">Support Center</a>
+              <a class="footer-link mb-2" href="#">Payment Security</a>
+              <a class="footer-link mb-2" href="#">Privacy Policy</a>
+              <a class="footer-link mb-2" href="#">EMI</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6 footer-block">
+            <h5 class="heading">Terms & Condition</h5>
+            <div class="links mt-3">
+              <a class="footer-link mb-2" href="#">General</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row bottom"></div>
+      </div>
+    </footer>
+    <!-- here ended the footer section  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="Assets/js/owl.carousel.min.js"></script>
+    <script src="Assets/js/caurosel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="Assets/js/select2_usage.js"></script>
+    <script src="Assets/js/function.js"></script>
+    <script src="Assets/js/flight_book.js"></script>
+    <script type="module" src="Assets/js/script.js"></script>
+  </body>
+</html>

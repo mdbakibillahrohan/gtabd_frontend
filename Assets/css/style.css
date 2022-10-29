@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('utilities.css');
+@import url('visa-details.css');
 /* import section  */
 
 
@@ -149,7 +150,7 @@ nav .navbar-brand img {
 }
 
 .hero .content .tabs .tab-window .tab-buttons .tab-btn {
-    width: 33.33%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,9 +177,7 @@ nav .navbar-brand img {
     margin-bottom: 15px;
 }
 
-.hero .content .tabs .tab-window .tab-content .tab-content-text {
-    text-align: justify;
-}
+
 
 /* hotel tab section css started */
 .hero .content .tabs .tab-window .tab-content .single-tab {
@@ -232,7 +231,7 @@ nav .navbar-brand img {
 /* here started the select2 overridden css  */
 
 
-.select2-search--dropdown .select2-search__field {
+.hero .content .tabs .tab-window .tab-content .single-tab .flight-tab-contents .search-box .text-field .select2-search--dropdown .select2-search__field {
     width: 98%;
 }
 
