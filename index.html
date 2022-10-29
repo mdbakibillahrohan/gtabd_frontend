@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="Assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="Assets/css/owl.theme.default.css" />
     <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="Assets/css/responsive.css">
   </head>
   <body>
     <div class="root">
@@ -241,7 +242,7 @@
                       <div class="wrap row">
 
 
-                        <div class="col-md-3 single-search-component">
+                        <div class="col-md-6 col-sm-6 col-lg-3 single-search-component">
                           <div class="search-box ">
                             <div class="text-field">
                               <span class="label">Flying from</span>  
@@ -251,24 +252,24 @@
                                   <option value="1">DAC, Dhaka International Airport</option>
                                 </select>
                                 <div class="details">
-                                  <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                                  <span class="fw-bold search-limit-details">Airport</span>
                                 </div>
                             </div>
                           </div>
 
                         </div>
 
-                        <div class="col-md-3 single-search-component">
+                        <div class="col-md-6 col-sm-6 col-lg-3 single-search-component">
                           <div class="search-box">
                             <div class="text-field">
                               <span class="label">Flying to</span>  
                                 
                                 <!-- <input value="Dhaka" class="search-text" placeholder="Airport" type="text"> -->
-                                <select class="search-text select2-search-element " name="flight_from" id="">
+                                <select class="search-text select2-search-element js-example-responsive" name="flight_from" id="">
                                   <option value="1">DAC, Dhaka International Airport</option>
                                 </select>
                                 <div class="details">
-                                  <span class="fw-600 search-limit-details">DAC, Bangladesh, Hazrat Shahjalal International Airport (DAC)</span>
+                                  <span class="fw-bold search-limit-details">Airport</span>
                                 </div>
                             </div>
 
@@ -278,7 +279,7 @@
                         </div>
 
 
-                        <div class="col-md-3 single-search-component">
+                        <div class="col-md-6 col-sm-6 col-lg-3 single-search-component">
                           <div class="search-box">
                             <div class="text-field ">
                               <span class="label">Select Date</span>  
@@ -293,7 +294,7 @@
                         </div>
 
 
-                        <div class="col-md-3 single-search-component">
+                        <div class="col-md-6 col-sm-6 col-lg-3 single-search-component">
                           <div class="search-box " data-bs-toggle="modal" data-bs-target="#exampleModal" >
                             <div class="text-field">
                               <span class="label">Passengers and Cabin Class</span>  
@@ -321,7 +322,95 @@
 
 
                     <div id="tab_round_trip" class="d-none flight-single-tab container">
-                      <h2>Round Trip</h2>
+                      <div class="wrap row">
+
+
+                        <div class="col-md-6 col-sm-6 col-lg-3 single-search-component">
+                          <div class="search-box ">
+                            <div class="text-field">
+                              <span class="label">Flying from</span>  
+                                
+                                <!-- <input value="Dhaka" class="search-text" placeholder="Airport" type="text"> -->
+                                <select class="search-text select2-search-element " name="flight_from" id="">
+                                  <option value="1">DAC, Dhaka International Airport</option>
+                                </select>
+                                <div class="details">
+                                  <span class="fw-bold search-limit-details">Airport</span>
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-lg-3 single-search-component">
+                          <div class="search-box">
+                            <div class="text-field">
+                              <span class="label">Flying to</span>  
+                                
+                                <!-- <input value="Dhaka" class="search-text" placeholder="Airport" type="text"> -->
+                                <select class="search-text select2-search-element js-example-responsive" name="flight_from" id="">
+                                  <option value="1">DAC, Dhaka International Airport</option>
+                                </select>
+                                <div class="details">
+                                  <span class="fw-bold search-limit-details">Airport</span>
+                                </div>
+                            </div>
+
+                            
+                          </div>
+                          
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-6 col-lg-4 single-search-component">
+                          <div class="d-flex justify-content-between">
+                            <div class="search-box">
+                              <div class="text-field">
+                                <span class="label">Depart on</span>  
+                                  
+                                  <input value="Dhaka" class="search-text "  type="date">
+                                  <div class="details">
+                                    <span class="fw-600 search-limit-details"><b>2022,</b> October</span>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="search-box">
+                              <div class="text-field ">
+                                <span class="label">Return on</span>  
+                                  
+                                  <input value="Dhaka" class="search-text "  type="date">
+                                  <div class="details">
+                                    <span class="fw-600 search-limit-details"><b>2022,</b> October</span>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+
+                        
+
+
+                        <div class="col-md-12 col-sm-6 col-lg-2 single-search-component">
+                          <div class="search-box " data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            <div class="text-field">
+                              <span class="label">Passengers and Cabin Class</span>  
+                                
+                                <!-- <input value="1 Person" class="search-text" placeholder="Airport" type="text"> -->
+                                <button type="button" class="btn fw-bold p-0 d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  <span class="ticket-total-person">1</span> Person
+                                </button>
+                                <div class="details">
+                                  <span class="fw-bold search-limit-details class-details">Economy</span> Class
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                      </div>
                     </div>
                     <div id="tab_multi_city" class="d-none flight-single-tab container">
                       <h1>Multi City</h1>
